@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+*{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: 'Roboto' , sans-serif;
+}
+body {
+         background-color: #fff;
+}
+header {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 15px 3%;
+         box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.logo image {
+         width: 50px;
+}
+a img {
+         width: 20px;
+}
+.menu-logo {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+}
+.menu-logo ul {
+         display: flex;
+         list-style: none;
+         margin-left: 30px;
+}
+.menu-logo ul li a {
+         font-weight: bold;
+         margin-left: 20px;
+         text-transform: uppercase;
+         text-decoration: none;
+         font-size: 13px;
+         letter-spacing: 2px;
+         color: #000;
+         position: relative;
+}
+.menu-logo ul li a::after {
+         content: "";
+         position: absolute;
+         left: -15px;
+         bottom: 20px;
+         background-color: #006241;
+         height: 2px;
+         width: 100%;
+         transition: 0.5s;
+         opacity: 0;
+}
+.menu-logo ul li a:hover::after{
+         left: 0;
+         opacity: 1;
+}
+
+.header-btns {
+         display: flex;
+}
+.header-btns a {
+         display: flex;
+         align-items: center;
+         margin-right: 25px;
+         text-decoration: 0;
+         font-size: 13px;
+}
+.header-btns a img {
+         margin-right: 10px;
+}
+.header-btns button:nth-child(2){
+         margin-right: 10px;
+}
+button {
+         padding: 6px 15px;
+         outline: 0;
+         background-color: transparent;
+         border: 2px solid #000;
+         border-radius: 30px;
+         transition: 0.5s ease-out;
+         text-transform: capitalize;
+         cursor: pointer;
+}
+button:hover {
+         background-color: #006241;
+         color: #fff;
+         border: 2px solid #006241;
+}
+.header-btns button:nth-child(3){
+         margin-right: 10px;
+         background-color: #000;
+         color: #fff;
+}
+
+/*Section*/
+section {
+         display: flex;
+         align-items: center;
+         width: 94%;
+         margin: 30px 3%;
+}
+section div {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+}
+.section__1 {
+         height: 200px;
+}
+section img {
+         height: 100%;
+         width: 100%;
+         object-fit: cover;
+}
+section .div1 , section .div2 {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         height: 100%;
+         width: 50%;
+}
+section div button {
+         margin-top: 35px;
+}
+.section__1 .div2 {
+         background-color: #1e3932;
+}
+.section__1 .div2 h2 {
+         color: #fff;
+}
+.section__1 .div2 button {
+         color: #fff;
+         border: 2px solid #fff;
+}
+
+section h1 {
+         font-size: 50px;
+         text-align: center;
+         letter-spacing: 2px;
+}
+section p {
+         font-size: 18px;
+         text-align: center;
+         padding: 10px 50px;
+         letter-spacing: 1px;
+}
+.section__2 {
+         background-color: #fa91aa;
+}
+
+.section__3 {
+         background-color: #f06464;
+         color: #fff;
+}
+.section__3 button {
+         border: 2px solid #fff;
+         color: #fff;
+}
+.section__4 {
+         background-color: #faaa5a;
+}
+
+.section__5 {
+         background-color: #9bf5b4;
+}
+
+/* text */
+.text {
+         text-align: center;
+         margin: 30px 0;
+         font-size: 15px;
+}
+.text a {
+         color: #000;
+}
+/* footer*/
+
+footer {
+         margin-bottom: 20px;
+}
+footer p {
+         font-size: 14px;
+         text-align: center;
+}
+footer hr {
+         border: 0;
+         background-color: #ccc;
+         height: 0.5px;
+         width: 100%;
+         margin: 20px 0;
+}
